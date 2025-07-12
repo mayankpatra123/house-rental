@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UrbanNest Homes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-hero {
+      background-image: url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .transition-all {
+      transition: all 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="text-gray-800 bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md p-5 flex justify-between items-center sticky top-0 z-40">
+    <h1 class="text-2xl font-extrabold text-blue-600 flex items-center gap-2">🏡 UrbanNest Homes</h1>
+    <nav class="space-x-6 text-lg font-medium">
+      <a href="#listings" class="text-gray-600 hover:text-blue-600 transition-all">🏘 Listings</a>
+      <a href="#facilities" class="text-gray-600 hover:text-blue-600 transition-all">🛠 Facilities</a>
+      <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-all">🌟 Testimonials</a>
+      <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-all">📞 Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-28 text-white bg-hero">
+    <div class="bg-black bg-opacity-50 p-8 rounded-xl inline-block shadow-lg">
+      <h2 class="text-5xl font-bold mb-4 drop-shadow-lg">Find Your Perfect Modern Home</h2>
+      <p class="text-lg tracking-wide">Furnished · Wi-Fi · Security · AC · Parking</p>
+      <a href="#listings" class="mt-5 inline-block bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700 transition-all">View Listings</a>
+    </div>
+  </section>
+
+  <!-- Filter -->
+  <section class="py-10 px-4 text-center">
+    <h3 class="text-2xl font-semibold mb-5">🔍 Filter Properties</h3>
+    <div class="flex flex-col md:flex-row gap-4 justify-center flex-wrap">
+      <input type="text" placeholder="Search by city or area" class="p-3 border rounded-md w-full md:w-60 shadow-sm" />
+      <select class="p-3 border rounded-md w-full md:w-52 shadow-sm">
+        <option selected>Price Range</option>
+        <option>₹10,000 - ₹20,000</option>
+        <option>₹20,001 - ₹30,000</option>
+        <option>₹30,001 - ₹50,000</option>
+        <option>Above ₹50,000</option>
+      </select>
+      <select class="p-3 border rounded-md w-full md:w-52 shadow-sm">
+        <option selected>Property Type</option>
+        <option>Studio</option>
+        <option>1 BHK</option>
+        <option>2 BHK</option>
+        <option>3 BHK</option>
+        <option>Villa</option>
+      </select>
+      <select class="p-3 border rounded-md w-full md:w-60 shadow-sm">
+        <option selected>Select State</option>
+        <option>Delhi</option>
+        <option>Maharashtra</option>
+        <option>Karnataka</option>
+        <option>Tamil Nadu</option>
+        <option>Uttar Pradesh</option>
+        <option>Gujarat</option>
+        <option>Rajasthan</option>
+        <option>Bihar</option>
+        <option>Kerala</option>
+        <option>Punjab</option>
+        <option>West Bengal</option>
+        <option>Madhya Pradesh</option>
+        <option>Chhattisgarh</option>
+        <option>Odisha</option>
+        <option>Andhra Pradesh</option>
+        <option>Telangana</option>
+        <option>Assam</option>
+        <option>Jharkhand</option>
+        <option>Haryana</option>
+        <option>Himachal Pradesh</option>
+        <option>Jammu & Kashmir</option>
+        <option>Goa</option>
+        <option>Manipur</option>
+        <option>Tripura</option>
+        <option>Meghalaya</option>
+        <option>Uttarakhand</option>
+        <option>Sikkim</option>
+        <option>Nagaland</option>
+        <option>Mizoram</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Listings -->
+  <section id="listings" class="px-4 md:px-20 py-14 bg-gray-50">
+    <h3 class="text-3xl font-semibold text-center mb-10">🏡 Available Homes</h3>
+    <div class="grid gap-8 md:grid-cols-3">
+
+      <!-- 2 BHK -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 card">
+        <img src="https://gos3.ibcdn.com/bbd08c30010c11ee8c380a58a9feac02.jpg" class="rounded-xl w-full h-52 object-cover mb-3">
+        <h4 class="text-xl font-bold">2 BHK Apartment</h4>
+        <p class="text-gray-600">₹25,000/month · Bangalore</p>
+        <div class="flex gap-2 mt-2 text-blue-600 text-sm">
+          <span>📶 Wi-Fi</span><span>❄ AC</span><span>🚗 Parking</span>
+        </div>
+      </div>
+
+      <!-- 3 BHK -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 card">
+        <img src="https://www.luxuryvillasstay.com/wp-content/uploads/2023/01/pool-1-2.jpg" class="rounded-xl w-full h-52 object-cover mb-3">
+        <h4 class="text-xl font-bold">3 BHK Villa</h4>
+        <p class="text-gray-600">₹45,000/month · Pune</p>
+        <div class="flex gap-2 mt-2 text-blue-600 text-sm">
+          <span>🔐 Security</span><span>🛏 Furnished</span><span>📶 Wi-Fi</span>
+        </div>
+      </div>
+
+      <!-- 1 BHK -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 card">
+        <img src="https://property-img.s3.ap-south-1.amazonaws.com/91254627a399848b60_org.jpeg" class="rounded-xl w-full h-52 object-cover mb-3">
+        <h4 class="text-xl font-bold">1 BHK Apartment</h4>
+        <p class="text-gray-600">₹20,000/month · Mumbai</p>
+        <div class="flex gap-2 mt-2 text-blue-600 text-sm">
+          <span>📶 Wi-Fi</span><span>🚗 Parking</span><span>🔐 Security</span>
+        </div>
+      </div>
+       <!-- 2 BHK -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 card">
+        <img src="https://static.toiimg.com/photo/56288525.cms" class="rounded-xl w-full h-52 object-cover mb-3">
+        <h4 class="text-xl font-bold">2 BHK Apartment</h4>
+        <p class="text-gray-600">₹25,000/month · Assam</p>
+        <div class="flex gap-2 mt-2 text-blue-600 text-sm">
+          <span>📶 Wi-Fi</span><span>❄ AC</span><span>🚗 Parking</span>
+        </div>
+      </div>
+
+      <!-- 3 BHK -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 card">
+        <img src="https://images.trvl-media.com/lodging/3000000/2930000/2921000/2920922/70aac50d.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" class="rounded-xl w-full h-52 object-cover mb-3">
+        <h4 class="text-xl font-bold">3 BHK Villa</h4>
+        <p class="text-gray-600">₹45,000/month · Maharashtra</p>
+        <div class="flex gap-2 mt-2 text-blue-600 text-sm">
+          <span>🔐 Security</span><span>🛏 Furnished</span><span>📶 Wi-Fi</span>
+        </div>
+      </div>
+
+      <!-- 1 BHK -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 card">
+        <img src="https://images.trvl-media.com/lodging/38000000/37600000/37590700/37590630/8501204f.jpg?impolicy=fcrop&w=357&h=201&p=1&q=medium" class="rounded-xl w-full h-52 object-cover mb-3">
+        <h4 class="text-xl font-bold">1 BHK Apartment</h4>
+        <p class="text-gray-600">₹20,000/month · Delhi</p>
+        <div class="flex gap-2 mt-2 text-blue-600 text-sm">
+          <span>📶 Wi-Fi</span><span>🚗 Parking</span><span>🔐 Security</span>
+        </div>
+      </div>
+      <!-- 1 BHK -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 card">
+        <img src="https://i.pinimg.com/736x/6f/72/35/6f7235447ca2c37edf7df110269d363b.jpg" class="rounded-xl w-full h-52 object-cover mb-3">
+        <h4 class="text-xl font-bold">1 BHK Apartment</h4>
+        <p class="text-gray-600">₹15,000/month · Tamilnadu</p>
+        <div class="flex gap-2 mt-2 text-blue-600 text-sm">
+          <span>📶 Wi-Fi</span><span>🚗 Parking</span><span>🔐 Security</span>
+        </div>
+      </div>
+      <!-- 1 BHK -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0iej5A3RNtu92bRq2giXfxuQb_Lk8jP2POQ&s" class="rounded-xl w-full h-52 object-cover mb-3">
+        <h4 class="text-xl font-bold">1 BHK Apartment</h4>
+        <p class="text-gray-600">₹10,000/month · Gujurat</p>
+        <div class="flex gap-2 mt-2 text-blue-600 text-sm">
+          <span>📶 Wi-Fi</span><span>🚗 Parking</span><span>🔐 Security</span>
+        </div>
+      </div>
+      <!-- 2 BHK -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 card">
+        <img src="https://i0.wp.com/www.globalplayboy.com/wp-content/uploads/2023/06/luxury-hotel-bedroom.jpeg?fit=768%2C576&ssl=1" class="rounded-xl w-full h-52 object-cover mb-3">
+        <h4 class="text-xl font-bold">2 BHK Apartment</h4>
+        <p class="text-gray-600">₹25,000/month · Punjab</p>
+        <div class="flex gap-2 mt-2 text-blue-600 text-sm">
+          <span>📶 Wi-Fi</span><span>❄ AC</span><span>🚗 Parking</span>
+        </div>
+      </div>
+
+      <!-- 3 BHK -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 card">
+        <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202312041648211908-aeafd49a-3da1-4e78-8858-0dcdf69fd646.jpg" class="rounded-xl w-full h-52 object-cover mb-3">
+        <h4 class="text-xl font-bold">3 BHK Villa</h4>
+        <p class="text-gray-600">₹45,000/month · Andrapradesh</p>
+        <div class="flex gap-2 mt-2 text-blue-600 text-sm">
+          <span>🔐 Security</span><span>🛏 Furnished</span><span>📶 Wi-Fi</span>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Facilities -->
+  <section id="facilities" class="py-16 px-4 bg-gray-100">
+    <h3 class="text-3xl font-semibold text-center mb-6">🛠 Facilities Available</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <h4 class="text-xl font-bold mb-2">24/7 Security</h4>
+        <p class="text-gray-600">Ensuring your safety and peace of mind.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <h4 class="text-xl font-bold mb-2">Wi-Fi Connectivity</h4>
+        <p class="text-gray-600">Stay connected with high-speed internet.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <h4 class="text-xl font-bold mb-2">Parking Space</h4>
+        <p class="text-gray-600">Ample parking for residents and guests.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <h4 class="text-xl font-bold mb-2">Swimming Pool</h4>
+        <p class="text-gray-600">Relax and unwind in our luxurious pool.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <h4 class="text-xl font-bold mb-2">Gym Facilities</h4>
+        <p class="text-gray-600">Stay fit with our state-of-the-art gym.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 px-4 bg-gray-100">
+    <h3 class="text-3xl font-semibold text-center mb-6">🌟 What Our Clients Say</h3>
+    <div class="flex flex-col md:flex-row gap-8 justify-center">
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <p class="italic">"UrbanNest helped me find my dream home in no time!"</p>
+        <p class="font-bold mt-4">- Priya S.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <p class="italic">"Great service and friendly staff. Highly recommend!"</p>
+        <p class="font-bold mt-4">- Rajesh K.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <p class="italic">"I love my new apartment! Thank you, UrbanNest!"</p>
+        <p class="font-bold mt-4">- Anjali M.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+        <p class="italic">"The best experience I’ve ever had in finding a home!"</p>
+        <p class="font-bold mt-4">- Rohan T.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section id="contact" class="bg-white py-16 px-4 md:px-40">
+    <h3 class="text-3xl font-semibold text-center mb-6">📩 Contact Us</h3>
+    <form action="https://formspree.io/f/xgegdjgz" method="POST" class="space-y-4 max-w-xl mx-auto">
+      <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded-xl shadow-sm" required>
+      <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded-xl shadow-sm" required>
+      <textarea name="message" rows="4" placeholder="Your Message" class="w-full p-3 border rounded-xl shadow-sm" required></textarea>
+      <input type="hidden" name="phone" value="8917625555">
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700 transition-all">Send Message</button>
+    </form>
+    <p class="text-center text-sm mt-4 text-gray-500">We'll respond via email or phone within 24 hours</p>
+  </section>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/918917625555?text=Hello%2C%20I%20am%20interested%20in%20renting%20a%20property" target="_blank"
+     class="fixed bottom-5 right-5 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg text-sm hover:bg-green-600 z-50">
+    💬 Chat on WhatsApp
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-center py-4 text-sm">
+    <p>© 2025 UrbanNest Homes. All rights reserved.</p>
+    <div class="flex justify-center space-x-4 mt-2">
+      <a href="#" class="text-blue-600 hover:underline">Privacy Policy</a>
+      <a href="#" class="text-blue-600 hover:underline">Terms of Service</a>
+      <a href="#" class="text-blue-600 hover:underline">Follow us on Facebook</a>
+      <a href="#" class="text-blue-600 hover:underline">Follow us on Instagram</a>
+    </div>
+  </footer>
+
+</body>
+</html>
